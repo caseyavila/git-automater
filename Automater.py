@@ -8,12 +8,15 @@ def txtprint(output):
     global lentry
     try:
         output = output.decode()
+        output = output.strip()
     except AttributeError:
         pass
     if output in '':
         print('idek')
     else:
-        txt.insert(0.0, '[' + str(lentry) + ']  ' + output.replace('\n', ' | ') + '\n')
+        txt.configure(state='normal')
+        txt.insert(0.0, '[' + str(lentry) + ']: ' + output.replace('\n', ' | ') + '\n')
+        txt.configure(state='disabled')
         lentry += 1
 
 def dirchoose():
