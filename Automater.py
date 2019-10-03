@@ -12,7 +12,7 @@ def txtprint(output):
     except AttributeError:
         pass
     if output in '':
-        print('idek')
+        pass
     else:
         txt.configure(state='normal')
         txt.insert(0.0, '[' + str(lentry) + ']: ' + output.replace('\n', ' | ') + '\n')
