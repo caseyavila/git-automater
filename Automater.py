@@ -51,7 +51,7 @@ def push():
 
 
 root = Tk()
-root.title("Git Automater")
+root.title("Git Auomater")
 root.geometry("662x548")
 root.resizable(False, False)
 repopath = StringVar()
