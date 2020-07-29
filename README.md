@@ -1,4 +1,4 @@
-# GitAutomater
+# git-automater
 A Python 3 GUI that enables users to automate the process of Git
 ## Features
 This program allows for the automation of `git add *`, `git commit -m "COMMIT MESSAGE"`, and `git push origin master`
